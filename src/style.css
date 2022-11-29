@@ -1,0 +1,31 @@
+/* Javier Florencio Airado */
+
+/* 
+    colores
+    azul
+*/
+
+
+*{
+    margin: 0%;
+}
+
+
+body{
+    height: 100vh;
+}
+
+header{
+    background-color: green;
+    height : 15vh;
+}
+
+main{
+    background-color: aliceblue;
+    height : 75vh;
+}
+
+footer{
+    background-color: black;
+    height : 10vh;
+}
