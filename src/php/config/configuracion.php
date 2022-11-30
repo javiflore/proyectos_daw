@@ -7,4 +7,5 @@
     define ("basedatos", "user2daw_BD2-04");
     define ("servidorbd", "2daw.esvirgua.com");
 
+    define("DEFAULT_ACTION", "getMinijuego");
 ?>

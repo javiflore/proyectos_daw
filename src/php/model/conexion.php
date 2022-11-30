@@ -1,7 +1,7 @@
 <?php
 // Javier Florencio Airado
 
-include 'config/configuracion.php';
+// include 'config/configuracion.php';
 
 class Conectar{
 

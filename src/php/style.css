@@ -10,7 +10,7 @@
     margin: 0%;
 }
 
-
+/*** LAYOUT ***/
 body{
     height: 100vh;
 }
@@ -20,9 +20,15 @@ header{
     height : 15vh;
 }
 
+nav{
+    height : 5vh;
+    display: flex;
+    align-items: center;
+}
+
 main{
     background-color: aliceblue;
-    height : 75vh;
+    height : 70vh;
     text-align: center;
 }
 
@@ -32,7 +38,22 @@ footer{
     color: aliceblue;
 }
 
-button#anadir{
+
+/*** Elementos NAV ***/
+nav > div{
+    padding: 0 3%;
+}
+
+
+
+
+
+
+
+
+
+/*** Elementos LISTAR ***/
+input#aniadir{
     margin: 5% auto 0;
 }
 
@@ -45,3 +66,4 @@ table, th, td{
     border: 1px solid rgb(0, 0, 0);
 }
 
+/*** Elementos  ***/
