@@ -12,8 +12,8 @@
         </tr>
         <?php
             foreach ($dataToView["data"] as $datos) {
-                echo "<tr><td>".$datos['imagenMinijuego']."</td><td>".$datos['nombre']."</td><td>".$datos['urlMinijuego']."</td><td>".$datos['descripcion']."</td><td>
-                <a href=\"views/vista_editar.php\">
+                echo "<tr><td><img src=\"".$datos['imagenMinijuego']."\"></td><td>".$datos['nombre']."</td><td>".$datos['urlMinijuego']."</td><td>".$datos['descripcion']."</td><td>
+                <a href=\"index.php?action=editarMinijuego&id=".$datos['id']."\">
                     <span class=\"material-symbols-outlined\">edit_note</span>
                 </a>
                 <a href=\"views/vista_eliminar.php\">

@@ -19,7 +19,7 @@ $dataToView["data"] = array();
 
 if(method_exists($controladorMinijuego,$_GET["action"])) $dataToView["data"] = $controladorMinijuego->{$_GET["action"]}();
 
-// var_dump($dataToView["data"]);
+var_dump($dataToView["data"]);
 
 /** Monta las vistas */
 require_once('views/header.html');

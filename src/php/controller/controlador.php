@@ -23,10 +23,21 @@ class ControladorMinijuego {
         return $this->modelo->getMinijuego();
     }
 
+    public function editarMinijuego(){
+        $this->vista = 'aniadir';
+        if(isset($_GET["id"])) $id = $_GET["id"];
+        var_dump($id);
+        return $this->modelo->consultaId($id);
+    }
+
     public function saveMinijuego(){
         // echo 'guardar nuevo mini';
         $this->vista = 'listar';
-        $this->modelo->saveMinijuego($_POST);
+
+        var_dump($_POST);
+        var_dump($_FILES);
+
+        $this->modelo->saveMinijuego($_POST, $_FILES);
         return $this->modelo->getMinijuego();
     }
 
