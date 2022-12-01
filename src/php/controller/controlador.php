@@ -25,8 +25,9 @@ class ControladorMinijuego {
 
     public function saveMinijuego(){
         // echo 'guardar nuevo mini';
-        $id = $this->modelo->saveMinijuego($_POST);
         $this->vista = 'listar';
+        $this->modelo->saveMinijuego($_POST);
+        return $this->modelo->getMinijuego();
     }
 
 }

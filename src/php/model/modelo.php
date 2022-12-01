@@ -5,6 +5,7 @@
 class Modelo {
     private $db;
     private $proyectos;
+    private $tabla = "minijuegos";
 
 
     public function __construct() {
