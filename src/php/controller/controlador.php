@@ -26,7 +26,7 @@ class ControladorMinijuego {
     public function editarMinijuego(){
         $this->vista = 'aniadir';
         if(isset($_GET["id"])) $id = $_GET["id"];
-        var_dump($id);
+        // var_dump($id);
         return $this->modelo->consultaId($id);
     }
 
@@ -34,10 +34,17 @@ class ControladorMinijuego {
         // echo 'guardar nuevo mini';
         $this->vista = 'listar';
 
-        var_dump($_POST);
-        var_dump($_FILES);
+        // var_dump($_POST);
+        // var_dump($_FILES);
 
         $this->modelo->saveMinijuego($_POST, $_FILES);
+        return $this->modelo->getMinijuego();
+    }
+
+    public function eliminarMinijuego(){
+        $this->vista = "listar";
+        if(isset($_GET["id"])) $id = $_GET["id"];
+        $this->modelo->eliminarMinijuego($id);
         return $this->modelo->getMinijuego();
     }
 

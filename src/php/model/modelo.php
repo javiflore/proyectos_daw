@@ -75,11 +75,17 @@ class Modelo {
             $sql=("INSERT INTO minijuegos (id, nombre, urlMinijuego, imagenMinijuego, descripcion) values(default, ?, ?, ?, ?);");
             $stmt = $this->db->prepare($sql);
             $stmt->bind_param('ssss', $nombre, $urlMinijuego, $imagenMinijuego, $descripcion);
-            // $stmt->execute([$nombre, $urlMinijuego, $imagenMinijuego, $descripcion]);
             $stmt->execute();
             $stmt->close();
-        }
-                
+        }      
+    }
+
+    public function eliminarMinijuego($id){
+
+        $sql=("DELETE FROM minijuegos WHERE id=".$id.";");
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute();
+        $stmt->close();
     }
 
 }

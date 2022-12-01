@@ -16,7 +16,7 @@
                 <a href=\"index.php?action=editarMinijuego&id=".$datos['id']."\">
                     <span class=\"material-symbols-outlined\">edit_note</span>
                 </a>
-                <a href=\"views/vista_eliminar.php\">
+                <a href=\"index.php?action=eliminarMinijuego&id=".$datos['id']."\">
                     <span class=\"material-symbols-outlined\">delete</span>
                 </a>
                 ".$datos['id']."</td></tr>";
