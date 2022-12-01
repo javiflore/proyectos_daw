@@ -24,7 +24,7 @@ class Modelo {
     }
 
     public function consultaId($id){
-        print_r($id);
+        // print_r($id);
 
         $consulta=$this->db->query(" SELECT * from minijuegos WHERE id=".$id."; ");
         // $stmt=$this->db->query($sql);
@@ -34,7 +34,7 @@ class Modelo {
     }
 
     public function saveMinijuego($post, $file){
-        var_dump($post);
+        // var_dump($post);
 
         $id = $nombre = $urlMinijuego = $imagenMinijuego = $descripcion= "";
 
@@ -57,7 +57,7 @@ class Modelo {
             // if(isset($file)) $imagenMinijuego = $rutaImagen;
             if(isset($post["descripcion"])) $descripcion = $post["descripcion"];
 
-            print_r($post["id"]);
+            // print_r($post["id"]);
 
             $sql=("UPDATE minijuegos SET nombre = ?, urlMinijuego= ?, descripcion = ? WHERE id=".$post["id"].";");
             $stmt = $this->db->prepare($sql);
