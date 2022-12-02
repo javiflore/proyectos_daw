@@ -1,0 +1,215 @@
+/*  
+    Gupo DawVersiTeam 
+    Alberto Bravo Rostro
+    Alejandro Fernández 
+    Javier Florencio Airado
+    Jorge Ortega Rivera
+*/
+
+/* Eliminamos los estilos por defecto que trae el navegador */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*** CUERPO ***/
+body{
+    background-color: #F2F2F2;
+    font-family: arial; 
+    color: #3B4035;
+}
+
+/* Encabezado de la página */
+header {
+    background-color: #0378A6;
+    padding: 0.5%; 
+    box-shadow: 4px 5px 20px #89CAD9;
+    overflow: hidden;
+}
+
+/* Logotipo header */
+header div#logo img{
+    width: 12%;
+    height: auto;
+    border-radius: 5px;
+    float: left;
+}
+
+/* Título de la página */
+header h1{
+    margin: auto;
+    width: 26%;
+    margin-top: 2%;
+    color: #3B4035;
+    text-shadow: 2px 2px 2px#F2F2F2;
+}
+
+/* Cuerpo de la página */
+
+/* DESCRIPCIÓN DE LA PÁGINA */
+main#mainDescripcion{
+    width: 40%;
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    background-color: #89CAD9;
+    padding: 1%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #0378A6;
+}
+
+main#mainDescripcion p{
+    text-align: center;
+}
+
+main#mainDescripcion p span{
+    color: #0378A6;
+    font-weight: bold;
+}
+
+/* FLEXBOX DE JUEGOS */
+main#mainJuegos{
+    width: 40%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+main#mainJuegos img.juegos{
+    flex: 2 2;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 24%;
+    height: auto;
+}
+
+main#mainJuegos img.juegos:hover{
+    background-color: #89CAD9;
+    filter: blur(5px);
+    border-radius: 15px;
+    transition: 1s;
+}
+
+
+/* Pie de la página */
+footer{
+    background-color: #3B4035;
+    padding: 10px 20px;
+    box-shadow: 4px 5px 20px #0378A6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+img#logoFundacion{
+    background-color: white;
+    width: 10%;
+    border-radius: 5px;
+    margin-right: 3%;
+}
+
+span#textoFooter{
+    color: #0378A6;
+    font-size: 20px;
+
+}
+
+img#escudo{
+    width: 4%;
+}
+
+/** MEDIAS QUERYS **/
+
+/* Tablets */
+@media only screen and (max-width: 992px) {
+
+    header{
+        height: 10vh;
+    }
+
+    header  div#logo img{
+        width: 22%;
+        margin-top: 0.5vh;
+    }
+
+    header h1{
+        width: 40%;
+        margin-top: 3vh;
+    }
+
+    main#mainDescripcion{
+        width: 70%;
+        font-size: 20px;
+    }
+
+    main#mainJuegos{
+        width: 40%;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-content: space-around;
+    }
+    
+    main#mainJuegos img.juegos{
+        flex: 2 2;
+        margin-right: 5%;
+        margin-left: 5%;
+        width: 60%;
+        height: auto;
+    }
+
+    footer{
+        height: 8vh;
+    }
+
+}
+
+/* Phones */
+@media only screen and (max-width: 600px) {
+    header{
+        height: 10.5vh;
+    }
+
+    header  div#logo img{
+        width: 30%;
+        margin: 3%;
+    }
+
+    header h1{
+        width: 70%;
+        margin-top: 1.5vh;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    main#mainDescripcion{
+        width: 90%;
+        font-size: 20px;
+        padding: 2%;
+    }
+
+    main#mainJuegos{
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        flex-direction: row;
+    }
+    main#mainJuegos img.juegos{
+        flex: 2 2;
+        margin-right: 0%;
+        margin-left: 0%;
+        width: 50%;
+        height: auto;
+    }
+}
